@@ -1,0 +1,11 @@
+[package]
+name = "arceos-fs-async-usb-shell"
+version = "0.1.0"
+edition = "2021"
+authors = ["dbydd <dbydd@outlook.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axstd = { git = "https://github.com/Starry-OS/axstd.git", optional = true }
+axusb_host = {git = "https://github.com/arceos-usb/axusb_host.git",optional = true}
