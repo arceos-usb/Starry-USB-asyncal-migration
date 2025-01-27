@@ -50,6 +50,8 @@ BLK ?= n
 NET ?= n
 GRAPHIC ?= n
 BUS ?= pci
+XHCI ?= n
+DMA ?= n
 
 DISK_IMG ?= disk.img
 QEMU_LOG ?= n

@@ -60,6 +60,11 @@ ifeq ($(NET_DUMP), y)
   qemu_args-$(NET) += -object filter-dump,id=dump0,netdev=net0,file=netdump.pcap
 endif
 
+
+ifeq ($(XHCI),y) 
+  qemu_args-$(XHCI) += -usb -device nec-usb-xhci,id=xhci #need test
+endif
+
 qemu_args-$(GRAPHIC) += \
   -device virtio-gpu-$(vdev-suffix) -vga none \
   -serial mon:stdio

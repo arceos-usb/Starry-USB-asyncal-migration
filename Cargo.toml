@@ -1,4 +1,11 @@
-[patch]
+[patch."https://github.com/Starry-OS/axdriver.git".axdriver]
+path = "crates/axdriver"
+
+[patch."https://github.com/arceos-usb/axusb_host.git".axusb_host]
+path = "../arceos_starry_shared_crates/axusb_host"
+
+[patch."https://github.com/arceos-usb/axhid.git".axhid]
+path = "crates/axhid"
 
 [profile.dev]
 lto = true
@@ -7,5 +14,5 @@ lto = true
 lto = true
 
 [workspace]
-members = ["apps/display", "apps/exception", "apps/helloworld", "apps/memtest", "apps/fs/shell", "apps/net/echoserver", "apps/net/httpclient", "apps/net/httpserver", "apps/net/udpserver", "apps/net/bwbench", "apps/task/parallel", "apps/task/sleep", "apps/task/yield", "apps/task/priority", "apps/task/tls", "apps/monolithic_userboot", "tools/axlibc"]
+members = ["apps/display", "apps/exception", "apps/helloworld", "apps/memtest", "apps/fs/shell", "apps/net/echoserver", "apps/net/httpclient", "apps/net/httpserver", "apps/net/udpserver", "apps/net/bwbench", "apps/task/parallel", "apps/task/sleep", "apps/task/yield", "apps/task/priority", "apps/task/tls", "apps/monolithic_userboot","apps/fs_async_usb_shell", "tools/axlibc"]
 resolver = "2"

@@ -98,3 +98,8 @@ $ make A=apps/monolithic_userboot FEATURES=another_ext4,img,sched_rr LOG=error N
 - Please remove unnecessary dependencies in `Cargo.toml` before your commit.
 - After pulling a new crate to the local workspace, maybe you need to execute `make clean` to update the cache.
 
+
+# Starry-USB-async-migration
+
+## goal
+migrate & reconstruct usb module to here, and impl async function
